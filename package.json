@@ -1,0 +1,47 @@
+{
+  "name": "express-todo-api",
+  "version": "1.1.1",
+  "description": "A todo application api",
+  "main": "index.js",
+  "bin": {
+    "express-todo-api": "./bin/express-todo-api"
+  },
+  "scripts": {
+    "start": "./bin/express-todo-api",
+    "mocks": "mokr up todos",
+    "mocks-down": "mokr down todos",
+    "test": "happiness",
+    "prepublish": "npm t",
+    "postpublish": "git push && git push --tags"
+  },
+  "keywords": [
+    "todo",
+    "api"
+  ],
+  "author": "Wes Todd",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "commander": "^2.9.0",
+    "defined": "^1.0.0",
+    "express": "^4.13.3",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "faker": "^3.0.1",
+    "happiness": "^7.1.2",
+    "mokr": "^1.2.0",
+    "request": "^2.67.0"
+  },
+  "config": {
+    "port": 4000
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleytodd/express-todo-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wesleytodd/express-todo-api/issues"
+  },
+  "homepage": "https://github.com/wesleytodd/express-todo-api#readme"
+}
