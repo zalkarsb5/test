@@ -1,0 +1,18 @@
+# Зависимости
+node_modules/
+.pnp.*
+
+# Сборка
+dist/
+build/
+.next/
+coverage/
+
+# Авто-генерация
+prisma/generated/
+*.min.js
+*.map
+
+# Секреты
+.env
+.env.local
